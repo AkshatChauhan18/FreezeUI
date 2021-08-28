@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 show_downloads: false
 logo:  assets/icon.png
+title: "The Application Creator"
+description: "The application creator from Python file using cx_Freeze."
