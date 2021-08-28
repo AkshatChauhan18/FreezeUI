@@ -26,6 +26,7 @@ from FreezeUI.editor_window import *
 
 assets_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)),"assets")
 
+
 class UiExeWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -41,6 +42,7 @@ class UiExeWindow(QMainWindow):
         self.centralwidget = QWidget(self)
         self.setCentralWidget(self.centralwidget)
         self.setWindowTitle("FreezeUI")
+        self.setWindowIcon(QIcon(f"{assets_folder}/pyicon.svg"))
 
 # creating widgets
         gif_icon = QMovie(f'{assets_folder}/icon.gif')

@@ -20,21 +20,29 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>."""
 
 from FreezeUI import exe_win, msi_win
 from PyQt5.QtWidgets import QApplication
-
+import sys
 
 def create_exe():
-    import sys
     app = QApplication(sys.argv)
     window = exe_win.UiExeWindow()
     sys.exit(app.exec())
 
 
 def create_msi():
-    import sys
     app = QApplication(sys.argv)
     window = msi_win.UiMsiWindow()
     sys.exit(app.exec())
 
 
 if __name__ == "__main__":
-    create_exe()
+    print("""
+FreezeUI is used for creating cx_freeze setup
+files using GUI.
+
+FreezeUI is licensed under GNU GPLv3
+Copyright 2021 Akshat Chauhan
+ ______________________________________________
+|For creating exe the command is 'freezeui-exe'|
+|For creating msi the command is 'freezeui-msi'| 
+ ----------------------------------------------  
+    """)

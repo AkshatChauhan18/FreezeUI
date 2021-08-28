@@ -152,16 +152,15 @@ class EditorWindow(QWidget):
             self.notification = (
 "try:\n"
 "    from plyer import notification\n"
-"except:\n"
-"    pass\n"
-"try:"
+"    from FreezeUI import __icon__\n" 
 "    notification.notify(\n"
 "        title='FreezeUI Creator',\n"
 "        message=('''Your MSI is created \nThanks for using FreezeUI'''),\n"
+"        app_icon = __icon__,\n"    
 "        timeout=10)\n"
 "except:\n"
 "    print()"
-f"    print('Your MSI is created.')")
+"    print('Your MSI is created.')")
 
         if self.editor_type == "EXE":
             self.create_button.setText("Create EXE")
@@ -170,17 +169,15 @@ f"    print('Your MSI is created.')")
             self.notification = (
 "try:\n"
 "    from plyer import notification\n"
-"except:\n"
-"    pass\n"
-"try:"
+"    from FreezeUI import __icon__\n" 
 "    notification.notify(\n"
 "        title='FreezeUI Creator',\n"
 "        message=('''Your EXE is created \nThanks for using FreezeUI'''),\n"
+"        app_icon = __icon__,\n"    
 "        timeout=10)\n"
 "except:\n"
 "    print()"
-f"    print('Your EXE is created.')")
-
+"    print('Your EXE is created.')")
         self.save_button.setText("Save File")
 
         

@@ -66,6 +66,7 @@ class UiMsiWindow(QMainWindow):
         self.centralwidget = QWidget(self)
         self.setCentralWidget(self.centralwidget)
         self.setWindowTitle("FreezeUI")
+        self.setWindowIcon(QIcon(f"{assets_folder}/pyicon.svg"))
 
         font = QFont()
         font.setFamily("Yu Gothic UI")

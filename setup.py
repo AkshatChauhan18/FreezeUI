@@ -11,7 +11,7 @@ setup(
         version=ver,
         author="Akshat Chauhan",
         author_email="akki.coder@gmail.com",
-        license='MIT',
+        license='GNU GPL v3',
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         install_requires=["PyQt5","cx_Freeze","python_version <=3.6","QtPy","qtconsole","qscintilla","plyer"], 
@@ -19,11 +19,11 @@ setup(
         data_files=[('bitmaps', ['FreezeUI/assets/icon.gif'])],
         include_package_data=True,
         
-        keywords=['python', 'gui', 'cx_Freeze'],
+        keywords=['python', 'gui', 'cx_Freeze', 'FreezeUI'],
         classifiers=[
         'Intended Audience :: Developers',
         'Intended Audience :: Education'
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
