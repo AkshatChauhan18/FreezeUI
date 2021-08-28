@@ -18,7 +18,7 @@ setup(
         packages=['FreezeUI'],
         data_files=[('bitmaps', ['FreezeUI/assets/icon.gif'])],
         include_package_data=True,
-        
+        url = 
         keywords=['python', 'gui', 'cx_Freeze', 'FreezeUI'],
         classifiers=[
         'Intended Audience :: Developers',
