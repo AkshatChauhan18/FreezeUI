@@ -1,3 +1,5 @@
+<img src="assets/icon.png" alt="drawing" width="100"/>
+
 # **FreezeUI**
 
 FreezeUI is a python package used to create [cx_Freeze](https://pypi.org/project/cx-Freeze/) setup files and run them to create applications.
