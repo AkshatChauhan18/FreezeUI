@@ -1,0 +1,51 @@
+import sys
+from cx_Freeze import setup, Executable  
+
+directory_table = [
+    ("ProgramMenuFolder", "TARGETDIR", "."),
+    ("MyProgramMenu", "ProgramMenuFolder", "MYPROG~1|My Program")
+]
+
+base = None
+if sys.platform == "win32":
+    base = "Win32GUI"
+
+
+msi_data = {
+    "Directory": directory_table,
+    "ProgId": [
+        ("Prog.Id", None, None, "description-" , "IconId",None),
+    ]
+}
+
+bdist_msi_options = {
+    "add_to_path": add_to_path-,
+    "all_users": all_users-,
+    "data": msi_data,
+    "upgrade_code": upgrade_code-,
+    "install_icon":"exe_icon-",
+    "summary_data":{"author":"author-"}
+}
+
+build_exe_options = {"excludes":exclude_module-,"packages":include_module-,"include_files":include_files-}
+
+executables = [
+    Executable(
+        "python_file-",
+        copyright="copyright-",
+        base=base,
+        icon="exe_icon-",
+        shortcut_name="app_name-",
+        shortcut_dir="MyProgramMenu",
+    )
+]
+
+setup(
+    name="app_name-",
+    version="version-",
+    description="description-",
+    executables=executables,
+    options={
+        "build_exe": build_exe_options,
+        "bdist_msi": bdist_msi_options,
+    })

@@ -1,0 +1,5 @@
+.vscode/
+build/
+dist/
+FreezeUI.egg-info/
+__pycache__/
