@@ -14,7 +14,7 @@ Currently it can only make **Windows MSI and EXE** but in future versions will b
 pip install FreezeUI
 ```
 
-Check its [<image src="readme_assets/doc_button.svg" alt="doc" width="100" height="25">](https://akshatchauhan18.github.io/FreezeUI) for more
+Check its <a href="https://akshatchauhan18.github.io/FreezeUI" target="_blank"><image src="readme_assets/doc_button.svg" alt="doc" width="100" height="25"></a> for more
 information.
 
 ___
