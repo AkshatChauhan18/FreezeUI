@@ -23,12 +23,14 @@ from PyQt5.QtWidgets import QApplication
 import sys
 
 def create_exe():
+    print("Opening window ...")
     app = QApplication(sys.argv)
     window = exe_win.UiExeWindow()
     sys.exit(app.exec())
 
 
 def create_msi():
+    print("Opening window ...")
     app = QApplication(sys.argv)
     window = msi_win.UiMsiWindow()
     sys.exit(app.exec())
