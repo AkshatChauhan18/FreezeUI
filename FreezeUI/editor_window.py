@@ -196,11 +196,11 @@ class EditorWindow(QWidget):
         self.jupyter_widget.setMinimumHeight(200)
 
 # triggering actions
-        self.create_button.clicked.connect(self.create_msi)
+        self.create_button.clicked.connect(self.create)
         self.save_button.clicked.connect(self.save_file)
 
 
-    def create_msi(self):
+    def create(self):
         try:
             self.save_file()
             self.jupyter_widget.setHidden(False)
