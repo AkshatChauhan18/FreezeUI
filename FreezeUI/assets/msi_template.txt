@@ -23,7 +23,7 @@ bdist_msi_options = {
     "all_users": all_users-,
     "data": msi_data,
     "upgrade_code": upgrade_code-,
-    "install_icon":"exe_icon-",
+    "install_icon":exe_icon-,
     "summary_data":{"author":"author-"}
 }
 
@@ -34,7 +34,7 @@ executables = [
         "python_file-",
         copyright="copyright-",
         base=base,
-        icon="exe_icon-",
+        icon=exe_icon-,
         shortcut_name="app_name-",
         shortcut_dir="MyProgramMenu",
     )
@@ -42,7 +42,7 @@ executables = [
 
 setup(
     name="app_name-",
-    version="version-",
+    version=version-,
     description="description-",
     executables=executables,
     options={

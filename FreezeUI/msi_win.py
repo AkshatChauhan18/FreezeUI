@@ -281,10 +281,10 @@ class UiMsiWindow(QMainWindow):
     def generate_script(self):
         app_name = self.app_edit.text().strip()
         msi_author = self.author_edit.text().strip()
-        version = str(None) if self.version_edit.text() == "" else self.version_edit.text().strip()
+        version = str(None) if self.version_edit.text() == "" else f'"{self.version_edit.text().strip()}"'
         copyright = self.copyright_edit.text().strip()
         description = self.description_edit.text().strip()
-        exe_icon = str(None) if self.icon_edit.text() == "" else self.icon_edit.text().strip()
+        exe_icon = str(None) if self.icon_edit.text() == "" else f'"{self.icon_edit.text().strip()}"'
         python_file = self.python_script_edit.text().strip()
         package_list = str([]) if self.include_modules_list.text() == "" else str(self.include_modules_list.text().strip().split(' '))
         exclude_modules_list = str([]) if self.exclude_modules_list.text() == "" else str(self.exclude_modules_list.text().strip().split(' '))

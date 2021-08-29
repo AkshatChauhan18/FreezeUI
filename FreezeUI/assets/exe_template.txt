@@ -11,8 +11,8 @@ if sys.platform == "win32":
 
 setup(
     name = "app_name-",
-    version = "version-",
+    version = version-,
     description = "description-",
     options = {"build_exe": build_exe_options},
-    executables = [Executable("python_file-", base=base, icon="icon-", copyright = "copyright-",target_name="app_name-")]
+    executables = [Executable("python_file-", base=base, icon=icon-, copyright = "copyright-",target_name="app_name-")]
 )

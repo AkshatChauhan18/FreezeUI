@@ -158,6 +158,8 @@ class EditorWindow(QWidget):
 "        message=('''Your MSI is created \nThanks for using FreezeUI'''),\n"
 "        app_icon = __icon__,\n"    
 "        timeout=10)\n"
+"    print()\n"
+"    print('Your MSI is created.')\n"
 "except:\n"
 "    print()\n"
 "    print('Your MSI is created.')")
@@ -175,6 +177,8 @@ class EditorWindow(QWidget):
 "        message=('''Your EXE is created \nThanks for using FreezeUI'''),\n"
 "        app_icon = __icon__,\n"    
 "        timeout=10)\n"
+"    print('Your EXE is created.')\n"
+"    print()\n"
 "except:\n"
 "    print()\n"
 "    print('Your EXE is created.')")
