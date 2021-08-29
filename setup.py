@@ -25,7 +25,7 @@ setup(
     extras_require = {"dev":["pytest == 6.2.4"]},
     classifiers=[
             'Intended Audience :: Developers',
-            'Intended Audience :: Education'
+            'Intended Audience :: Education',
             'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
             'Programming Language :: Python',
             'Programming Language :: Python :: 3',
