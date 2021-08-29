@@ -159,7 +159,7 @@ class EditorWindow(QWidget):
 "        app_icon = __icon__,\n"    
 "        timeout=10)\n"
 "except:\n"
-"    print()"
+"    print()\n"
 "    print('Your MSI is created.')")
 
         if self.editor_type == "EXE":
@@ -176,7 +176,7 @@ class EditorWindow(QWidget):
 "        app_icon = __icon__,\n"    
 "        timeout=10)\n"
 "except:\n"
-"    print()"
+"    print()\n"
 "    print('Your EXE is created.')")
         self.save_button.setText("Save File")
 
