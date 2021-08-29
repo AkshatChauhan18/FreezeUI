@@ -22,6 +22,7 @@ setup(
     include_package_data=True,
     url="https://akshatchauhan18.github.io/FreezeUI",
     keywords=['python', 'gui', 'cx_Freeze', 'FreezeUI'],
+    extras_require = {"dev":["pytest == 6.2.4"]},
     classifiers=[
             'Intended Audience :: Developers',
             'Intended Audience :: Education'
