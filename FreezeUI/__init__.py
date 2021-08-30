@@ -18,5 +18,5 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>."""
 import os 
 icon = f"{os.path.dirname(os.path.realpath(__file__))}/assets/icon.ico"
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 __icon__ = icon

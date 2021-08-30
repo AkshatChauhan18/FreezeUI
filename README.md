@@ -1,4 +1,4 @@
-<image src="readme_assets/icon.png" width="100">
+<img src="https://raw.githubusercontent.com/AkshatChauhan18/FreezeUI/master/readme_assets/icon.png" width="100">
 
 # **FreezeUI**
 
@@ -13,7 +13,7 @@ Currently it can only make **Windows MSI and EXE** .
 pip install FreezeUI
 ```
 
-Check its <a href="https://akshatchauhan18.github.io/FreezeUI" target="_blank"><image src="readme_assets/doc_button.svg" alt="doc" width="100" height="25"></a> for more
+Check its <a href="https://akshatchauhan18.github.io/FreezeUI" target="_blank"><img src="https://raw.githubusercontent.com/AkshatChauhan18/FreezeUI/master/readme_assets/doc_button.svg" alt="doc" width="100" height="25"></a> for more
 information.
 
 ___
