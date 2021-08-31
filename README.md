@@ -2,7 +2,7 @@
 
 # **FreezeUI**
 
-FreezeUI is a python package use to create [cx_Freeze](https://pypi.org/project/cx-Freeze/) setup files and run them to create applications and msi.
+FreezeUI is a python package use to create [cx_Freeze](https://pypi.org/project/cx-Freeze/) setup files and run them to create applications and msi from python scripts (converts .py to .exe or .msi .
 
 Currently it can only make **Windows MSI and EXE** .
 ---
