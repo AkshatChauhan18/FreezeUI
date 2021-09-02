@@ -1,5 +1,3 @@
-
-
 from setuptools import setup
 from FreezeUI import __version__ as ver
 
