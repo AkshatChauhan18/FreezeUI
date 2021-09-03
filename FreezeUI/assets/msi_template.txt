@@ -37,6 +37,7 @@ executables = [
         icon=exe_icon-,
         shortcut_name="app_name-",
         shortcut_dir="MyProgramMenu",
+        target_name="app_name-"
     )
 ]
 
