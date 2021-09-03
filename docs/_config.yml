@@ -1,4 +1,4 @@
 theme: jekyll-theme-minimal
 show_downloads: false
 logo:  assets/icon.png
-description: "The application creator from Python file using cx_Freeze."
+description: "Converts Python file to application using GUI"

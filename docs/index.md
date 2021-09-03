@@ -3,7 +3,16 @@
 FreezeUI is a python package used to create [cx_Freeze](https://pypi.org/project/cx-Freeze/) setup files and run them to create applications from python scripts (converts .py to .exe or .msi) .
 
 Currently it can only make **Windows MSI and EXE**.
-## Installation
+
+___
+
+## Profit💰 of using FreezeUI
+
+In order to convert .py to .exe using cx_freeze you need to write extra setup python files which is time taking process. FreezeUI creates those setup files for you using GUI which is a easy process and later you can edit those files using FreezeUI editor like in inno setup.
+
+___
+
+## Installation⏬
 
 ```
 pip install FreezeUI
@@ -11,7 +20,7 @@ pip install FreezeUI
 
 ---
 
-## Build from source
+## Build from source🛠️
 
 To build from source download the [zip folder](https://github.com/AkshatChauhan18/FreezeUI/archive/refs/heads/master.zip) or use *git* to
 clone repo using command : 
@@ -30,7 +39,7 @@ Now you can contribute to FreezeUI project. You can run the above command whenev
 
 ---
 
-## Usage
+## Usage🧾
 
 For creating **EXE** the command is
 
@@ -46,7 +55,7 @@ freezeui-msi
 
 ___
 
-## Gallery
+## Gallery🖼️
 
 |Exe Window |Msi Window | 
 | ----------- | ----------- | 
