@@ -25,6 +25,23 @@ information.
 
 ___
 
+## Usage🧾
+
+For creating **EXE** the command is
+
+``` 
+freezeui-exe
+```
+
+For creating **MSI** the command is
+
+```
+freezeui-msi
+```
+
+___
+
+
 # Gallery🖼️
 
 |Exe Window |Msi Window | 
