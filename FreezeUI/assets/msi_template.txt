@@ -6,10 +6,7 @@ directory_table = [
     ("MyProgramMenu", "ProgramMenuFolder", "MYPROG~1|My Program")
 ]
 
-base = None
-if sys.platform == "win32":
-    base = "Win32GUI"
-
+base = base-
 
 msi_data = {
     "Directory": directory_table,

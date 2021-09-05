@@ -37,7 +37,7 @@ class UiExeWindow(QMainWindow):
         font.setBold(True)
         font.setWeight(75)
 
-        self.resize(652, 650)
+        self.resize(652, 670)
         self.setStyleSheet("background: #03203C")
         self.centralwidget = QWidget(self)
         self.setCentralWidget(self.centralwidget)
@@ -67,6 +67,8 @@ class UiExeWindow(QMainWindow):
         self.include_modules_list = QLineEdit(self.centralwidget)                        
         self.exclude_modules_list = QLineEdit(self.centralwidget)                
         self.script_gen_button = QPushButton(self.centralwidget)
+        self.console_app = QCheckBox(self.centralwidget)
+        self.console_app.setChecked(True)
 
 # seeting fonts to widgets        
         self.app_edit.setFont(font)
@@ -82,6 +84,8 @@ class UiExeWindow(QMainWindow):
         self.include_modules_list.setFont(font)
         self.python_script_browser_button.setFont(font)   
         self.dest_folder.setFont(font)   
+        self.console_app.setFont(font)
+        
 
 # adding text and placeholder text to widgets        
         self.app_edit.setPlaceholderText("App Name")
@@ -96,7 +100,8 @@ class UiExeWindow(QMainWindow):
         self.icon_browser_button.setText("BROWSE")
         self.python_script_browser_button.setText("BROWSE")
         self.dest_browser_button.setText("BROWSE")
-        self.script_gen_button.setText("Create    EXE")
+        self.script_gen_button.setText("Generate Script")
+        self.console_app.setText("Show console")
 
 # adding stylesheet to widgets
         self.freezeui_icon.setStyleSheet(
@@ -127,6 +132,7 @@ class UiExeWindow(QMainWindow):
             "border-radius:5px;background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #FD297A , stop: 1 #9424F0)") 
         self.dest_browser_button.setStyleSheet(
             "border-radius:5px;background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #FD297A , stop: 1 #9424F0)") 
+        self.console_app.setStyleSheet("color:white")    
         
 
 # setting geometry to widgets
@@ -144,7 +150,8 @@ class UiExeWindow(QMainWindow):
         self.dest_browser_button.setGeometry(QRect(530, 450, 90, 30))
         self.include_modules_list.setGeometry(QRect(30, 500, 590, 30))
         self.exclude_modules_list.setGeometry(QRect(30, 550, 590, 30))
-        self.script_gen_button.setGeometry(QRect(100, 600, 450, 30))
+        self.console_app.move(30,590)
+        self.script_gen_button.setGeometry(QRect(100, 620, 450, 30))
         
 
 # triggering actions
@@ -182,6 +189,7 @@ class UiExeWindow(QMainWindow):
         python_file = self.python_script_edit.text().strip()
         copyright_text = self.copyright_edit.text().strip()
         destination = f"{self.dest_folder.text().strip()}/{self.app_edit.text()}-{self.version_edit.text()}_win_application"
+        base = str(None) if self.console_app.isChecked() else '"Win32GUI"'
         
         if self.dest_folder.text() == "":
             msg = QMessageBox()
@@ -229,6 +237,7 @@ class UiExeWindow(QMainWindow):
             .replace("icon-", icon)
             .replace("copyright-",copyright_text)
             .replace("dest-", destination)
+            .replace("base-",base)
         )
 
         self.show_editor(converted_script,python_file)

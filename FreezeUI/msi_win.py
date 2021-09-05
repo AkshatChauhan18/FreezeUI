@@ -103,6 +103,8 @@ class UiMsiWindow(QMainWindow):
         self.add_to_path.setCheckable(True)
         self.add_to_path.setChecked(False)        
         self.install_for_all = QCheckBox(self.groupBox_2)
+        self.console_app = QCheckBox(self.groupBox)
+        self.console_app.setChecked(True)
         self.verticalLayout.addWidget(self.groupBox)
         self.verticalLayout.addWidget(self.groupBox_2)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
@@ -142,6 +144,7 @@ class UiMsiWindow(QMainWindow):
         self.icon_browser_button.setText("BROWSE")
         self.python_script_browser_button.setText("BROWSE")
         self.install_for_all.setText("Install for all users")
+        self.console_app.setText("Show console")
 
 # setting stylesheet to widgets
         self.script_gen_button.setStyleSheet(
@@ -187,7 +190,7 @@ class UiMsiWindow(QMainWindow):
         self.scrollArea.setMinimumSize(QSize(0, 390))
         self.scrollArea.setSizeIncrement(QSize(0, 300))
         self.scrollAreaWidgetContents.setGeometry(QRect(0, -396, 672, 734))
-        self.groupBox.setMinimumSize(QSize(0, 410))
+        self.groupBox.setMinimumSize(QSize(0, 450))
         self.app_edit.setGeometry(QRect(10, 20, 500, 30))
         self.app_edit.setMinimumSize(QSize(500, 30))
         self.version_edit.setGeometry(QRect(10, 70, 500, 30))
@@ -220,6 +223,7 @@ class UiMsiWindow(QMainWindow):
         self.so_easy_text.setGeometry(QRect(200, 20, 370, 80))
         self.script_gen_button.setGeometry(QRect(200, 550, 350, 30))
         self.script_gen_button.setMinimumSize(QSize(0, 30))
+        self.console_app.move(10,410)
 
 # setting font to widgets
         self.app_edit.setFont(font)
@@ -241,6 +245,7 @@ class UiMsiWindow(QMainWindow):
         font.setPointSize(12)
         self.add_to_path.setFont(font)
         self.install_for_all.setFont(font)
+        self.console_app.setFont(font)
         self.script_gen_button.setFont(font)
 
 
@@ -294,6 +299,7 @@ class UiMsiWindow(QMainWindow):
         add_to_path = str(True) if self.add_to_path.isChecked() else str(False)
         install_for_all = str(True) if self.install_for_all.isChecked() else str(False)
         includes = str([])
+        base = str(None) if self.console_app.isChecked() else '"Win32GUI"'
         guid = "None" if upgrade_code == "None" else "{%s}" % upgrade_code
 
         if include_files != "" and include_folders != "":
@@ -334,6 +340,7 @@ class UiMsiWindow(QMainWindow):
             .replace("include_files-", includes)
             .replace("author-", msi_author)
             .replace("all_users-", install_for_all)
+            .replace("base-",base)
         )
         self.show_editor(converted_script, python_file)
 

@@ -4,6 +4,8 @@ FreezeUI is a python package used to create [cx_Freeze](https://pypi.org/project
 
 Currently it can only make **Windows MSI and EXE**.
 
+> Currently can only pack gui like tkinter | pyqt5 | pyqt6 etc. Not console applications.
+
 ___
 
 ## Profit💰 of using FreezeUI
@@ -56,6 +58,8 @@ freezeui-msi
 ___
 
 ## Gallery🖼️
+
+Check demo [here](demo.html) .
 
 |Exe Window |Msi Window | 
 | ----------- | ----------- | 
