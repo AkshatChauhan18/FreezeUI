@@ -44,6 +44,8 @@ ___
 
 # Gallery🖼️
 
+### **Check demo [here](https://akshatchauhan18.github.io/FreezeUI/demo.html) .**
+
 |Exe Window |Msi Window | 
 | ----------- | ----------- | 
 |![exewin](https://raw.githubusercontent.com/AkshatChauhan18/FreezeUI/master/docs/assets/exe_win.png)|![msiwin](https://raw.githubusercontent.com/AkshatChauhan18/FreezeUI/master/docs/assets/msi_win.png)|
