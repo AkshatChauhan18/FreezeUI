@@ -2,7 +2,6 @@
 FreezeUI | This file is for calling FreezeUI using command line.
 Copyright (C) 2021  Akshat Chauhan
 Message on reddit u/AkshatCha
-Reddit community r/FreezeUI or r/LetsTalkProgramming
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -18,8 +17,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>."""
 
 
-from FreezeUI import exe_win, msi_win
-from PyQt5.QtWidgets import QApplication
+from FreezeUI_U import exe_win, msi_win
+from PyQt6.QtWidgets import QApplication
 import sys
 
 def create_exe():

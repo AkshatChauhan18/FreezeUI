@@ -1,3 +1,28 @@
+Metadata-Version: 2.1
+Name: FreezeUI-U
+Version: 0.0.5
+Summary: This a GUI for converting python scripts to applications using cx_Freeze.
+Home-page: https://akshatchauhan18.github.io/FreezeUI
+Author: Akshat Chauhan
+Author-email: coder.akshatch@gmail.com
+License: GNU GPL v3
+Keywords: python,gui,cx_Freeze,FreezeUI
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
 <img src="https://raw.githubusercontent.com/AkshatChauhan18/FreezeUI/master/readme_assets/icon.png" width="100">
 
 # **FreezeUI**
@@ -17,7 +42,7 @@ ___
 # Installation⏬
 
 ```
-pip install freezeui_u
+pip install FreezeUI
 ```
 
 Check its <a href="https://akshatchauhan18.github.io/FreezeUI" target="_blank"><img src="https://raw.githubusercontent.com/AkshatChauhan18/FreezeUI/master/readme_assets/doc_button.svg" alt="doc" width="100" height="25"></a> for more
@@ -53,3 +78,5 @@ ___
 |Editor Window|
 | ----------- |
 |![editorwin](https://raw.githubusercontent.com/AkshatChauhan18/FreezeUI/master/docs/assets/editor_window.png)|
+
+

@@ -2,7 +2,6 @@
 FreezeUI | This file is for initializing FreezeUI.
 Copyright (C) 2021  Akshat Chauhan
 Message on reddit u/AkshatCha
-Reddit community r/FreezeUI or r/LetsTalkProgramming
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -18,5 +17,5 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>."""
 import os 
 icon = f"{os.path.dirname(os.path.realpath(__file__))}/assets/icon.ico"
-__version__ = '0.0.4'
+__version__ = '0.0.5'
 __icon__ = icon

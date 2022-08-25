@@ -1,5 +1,5 @@
-from FreezeUI import editor_window
-from PyQt5.QtWidgets import QApplication
+from FreezeUI_U import editor_window
+from PyQt6.QtWidgets import QApplication
 import sys
 import os
 file = f"{os.path.dirname(os.path.realpath(__file__))}/FreezeUI_exe_setup.py"

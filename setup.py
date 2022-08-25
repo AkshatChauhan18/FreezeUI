@@ -1,22 +1,22 @@
 from setuptools import setup
-from FreezeUI import __version__ as ver
+from FreezeUI_U import __version__ as ver
 
 DESCRIPTION = 'This a GUI for converting python scripts to applications using cx_Freeze.'
 LONG_DESCRIPTION = open("README.md", encoding="utf-8").read()
 
 setup(
-    name="FreezeUI",
+    name="FreezeUI_U",
     version=ver,
     author="Akshat Chauhan",
-    author_email="akki.coder@gmail.com",
+    author_email="coder.akshatch@gmail.com",
     license='GNU GPL v3',
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     long_description_content_type='text/markdown',
-    install_requires=["PyQt5 <= 5.15.4", "cx_Freeze <= 6.7", "python_version <=3.6",
-                      "QtPy <= 1.10.0", "qtconsole <= 5.1.1", "qscintilla <= 2.13.0", "plyer <= 2.0.0"],
-    packages=['FreezeUI'],
-    data_files=[('bitmaps', ['FreezeUI/assets/icon.gif','FreezeUI/assets/icon.ico','FreezeUI/assets/msi_text.png','FreezeUI/assets/exe_text.png','FreezeUI/assets/pyicon.svg']),("text files",["FreezeUI/assets/msi_template.txt","FreezeUI/assets/exe_template.txt"])],
+    install_requires=["PyQt6", "cx_Freeze", "python_version <=3.6",
+                      "QtPy", "qtconsole", "pyqt6-qscintilla ", "plyer"],
+    packages=['FreezeUI_U'],
+    data_files=[('bitmaps', ['FreezeUI_U/assets/icon.gif','FreezeUI_U/assets/icon.ico','FreezeUI_U/assets/msi_text.png','FreezeUI_U/assets/exe_text.png','FreezeUI_U/assets/pyicon.svg']),("text files",["FreezeUI_U/assets/msi_template.txt","FreezeUI_U/assets/exe_template.txt"])],
     include_package_data=True,
     url="https://akshatchauhan18.github.io/FreezeUI",
     keywords=['python', 'gui', 'cx_Freeze', 'FreezeUI'],
@@ -31,12 +31,13 @@ setup(
             'Programming Language :: Python :: 3.7',
             'Programming Language :: Python :: 3.8',
             'Programming Language :: Python :: 3.9',
+            'Programming Language :: Python :: 3.10',
             'Operating System :: Microsoft :: Windows',
     ],
     entry_points={
         "console_scripts": [
-            "freezeui-exe = FreezeUI.__main__:create_exe",
-            "freezeui-msi = FreezeUI.__main__:create_msi"
+            "freezeui-exe = FreezeUI_U.__main__:create_exe",
+            "freezeui-msi = FreezeUI_U.__main__:create_msi"
         ],
     }
 )

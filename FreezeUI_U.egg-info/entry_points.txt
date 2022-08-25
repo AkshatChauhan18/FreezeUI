@@ -1,0 +1,3 @@
+[console_scripts]
+freezeui-exe = FreezeUI_U.__main__:create_exe
+freezeui-msi = FreezeUI_U.__main__:create_msi

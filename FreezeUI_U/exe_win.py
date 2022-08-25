@@ -2,7 +2,6 @@
 FreezeUI | This file is the gui for creating windows exe.
 Copyright (C) 2021  Akshat Chauhan
 Message on reddit u/AkshatCha
-Reddit community r/FreezeUI or r/LetsTalkProgramming
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -18,11 +17,11 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>."""
 
 
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
+from PyQt6.QtWidgets import *
+from PyQt6.QtCore import *
+from PyQt6.QtGui import *
 import os
-from FreezeUI.editor_window import *
+from FreezeUI_U.editor_window import *
 
 assets_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)),"assets")
 

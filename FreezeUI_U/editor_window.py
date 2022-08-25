@@ -2,7 +2,6 @@
 FreezeUI | This file is used for editing setup files and running them.
 Copyright (C) 2021  Akshat Chauhan
 Message on reddit u/AkshatCha
-Reddit community r/FreezeUI or r/LetsTalkProgramming
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -19,10 +18,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
-from PyQt5.Qsci import QsciScintilla, QsciLexerPython
+from PyQt6.QtWidgets import *
+from PyQt6.QtGui import *
+from PyQt6.QtCore import *
+from PyQt6.Qsci import QsciScintilla, QsciLexerPython
 from qtconsole.rich_jupyter_widget import RichJupyterWidget
 from qtconsole import styles
 from qtconsole.manager import QtKernelManager
@@ -124,9 +123,9 @@ class EditorWindow(QWidget):
         self.setStyleSheet("background : #03203C")
         self.editor = QsciScintilla()
         self.editor.setText(self.script)
-        self.editor.setMarginType(1, QsciScintilla.NumberMargin)
+        self.editor.setMarginType(1, QsciScintilla.MarginType.NumberMargin)
         self.editor.setMarginWidth(1, "0000")
-        self.editor.setBraceMatching(QsciScintilla.SloppyBraceMatch)
+        self.editor.setBraceMatching(QsciScintilla.BraceMatch.SloppyBraceMatch)
         self.editor.setLexer(QsciLexerPython())
         self.editor.setTabWidth(4)
         self.editor.setIndentationGuides(True)
