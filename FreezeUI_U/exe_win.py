@@ -69,7 +69,7 @@ class UiExeWindow(QMainWindow):
         self.console_app = QCheckBox(self.centralwidget)
         self.console_app.setChecked(True)
 
-# seeting fonts to widgets        
+# setting fonts to widgets        
         self.app_edit.setFont(font)
         self.copyright_edit.setFont(font)
         self.version_edit.setFont(font)
@@ -85,7 +85,6 @@ class UiExeWindow(QMainWindow):
         self.dest_folder.setFont(font)   
         self.console_app.setFont(font)
         
-
 # adding text and placeholder text to widgets        
         self.app_edit.setPlaceholderText("App Name")
         self.version_edit.setPlaceholderText("Version")
@@ -250,5 +249,3 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = UiExeWindow()
     sys.exit(app.exec())
-
-     

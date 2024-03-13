@@ -1,6 +1,6 @@
 """
 FreezeUI | This file is for initializing FreezeUI.
-Copyright (C) 2021  Akshat Chauhan
+Made by Akshat Chauhan
 Message on reddit u/AkshatCha
 
 This program is free software: you can redistribute it and/or modify

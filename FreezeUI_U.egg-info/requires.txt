@@ -1,6 +1,5 @@
 PyQt6
 cx_Freeze
-python_version<=3.6
 QtPy
 qtconsole
 pyqt6-qscintilla

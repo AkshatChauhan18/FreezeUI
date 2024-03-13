@@ -1,6 +1,6 @@
 """
 FreezeUI | This file is for calling FreezeUI using command line.
-Copyright (C) 2021  Akshat Chauhan
+Made by Akshat Chauhan
 Message on reddit u/AkshatCha
 
 This program is free software: you can redistribute it and/or modify
@@ -43,7 +43,7 @@ FreezeUI is used for creating cx_freeze setup
 files using GUI.
 
 FreezeUI is licensed under GNU GPLv3
-Copyright 2021 Akshat Chauhan
+Made by Akshat Chauhan
  ______________________________________________
 |For creating exe the command is 'freezeui-exe'|
 |For creating msi the command is 'freezeui-msi'| 

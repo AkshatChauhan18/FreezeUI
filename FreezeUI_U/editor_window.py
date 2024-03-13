@@ -1,6 +1,6 @@
 """
 FreezeUI | This file is used for editing setup files and running them.
-Copyright (C) 2021  Akshat Chauhan
+Made by Akshat Chauhan 2024
 Message on reddit u/AkshatCha
 
 This program is free software: you can redistribute it and/or modify
