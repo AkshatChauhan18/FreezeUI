@@ -8,5 +8,6 @@ qtconsole = "*"
 pyqt6 = "*"
 pyqt6-qscintilla = "*"
 setuptools = "*"
+pyside6 = "*"
 
 [dev-packages]
