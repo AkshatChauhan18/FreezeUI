@@ -4,10 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-qtconsole = "*"
 pyqt6 = "*"
+cx-freeze = "*"
 pyqt6-qscintilla = "*"
-setuptools = "*"
-pyside6 = "*"
+qtconsole = "*"
+plyer = "*"
 
 [dev-packages]
+
+[requires]
+python_version = "3.12"
+python_full_version = "3.12.4"
