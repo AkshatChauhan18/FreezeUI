@@ -5,7 +5,7 @@ from PyQt6.QtWidgets import QMainWindow, QApplication,QFileDialog
 from PyQt6.QtGui import QFontDatabase, QResizeEvent
 from PyQt6.QtCore import QSize
 from script_editor import *
-import asyncio
+
 os.environ["QT_ENABLE_HIGHDPI_SCALING"] = "1"
 os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
 os.environ["QT_SCALE_FACTOR"] = "1"
