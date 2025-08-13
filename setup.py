@@ -14,7 +14,7 @@ setup(
     long_description=LONG_DESCRIPTION,
     long_description_content_type='text/markdown',
     install_requires=["PyQt6", "cx_Freeze", "qtconsole", "pyqt6-qscintilla ", "plyer"],
-    python_requires = ">=3.6",
+    python_requires = ">=3.9",
     packages=['FreezeUI_U'],
     data_files=[('bitmaps', ['FreezeUI_U/assets/icon.gif','FreezeUI_U/assets/icon.ico','FreezeUI_U/assets/msi_text.png','FreezeUI_U/assets/exe_text.png','FreezeUI_U/assets/pyicon.svg']),("text files",["FreezeUI_U/assets/msi_template.txt","FreezeUI_U/assets/exe_template.txt"])],
     include_package_data=True,
