@@ -4,10 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-qtconsole = "*"
 pyqt6 = "*"
+qscintilla = "*"
 pyqt6-qscintilla = "*"
-setuptools = "*"
-pyside6 = "*"
+qtconsole = "*"
 
 [dev-packages]
+
+[requires]
+python_version = "3.13"
