@@ -1,0 +1,8 @@
+pyqt6
+qscintilla
+pyqt6-qscintilla
+qtconsole
+setuptools
+wheel
+cx_Freeze
+plyer

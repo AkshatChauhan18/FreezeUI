@@ -1,4 +1,4 @@
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/FreezeUI_U) ![PyPI](https://img.shields.io/pypi/v/FreezeUI_U) ![PyPI - Wheel](https://img.shields.io/pypi/wheel/FreezeUI_U) ![PyPI - License](https://img.shields.io/pypi/l/FreezeUI_U?color=green)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/FreezeUI) ![PyPI](https://img.shields.io/pypi/v/FreezeUI) ![PyPI - Wheel](https://img.shields.io/pypi/wheel/FreezeUI) ![PyPI - License](https://img.shields.io/pypi/l/FreezeUI?color=green)
 
 FreezeUI is a python package used to create [cx_Freeze](https://pypi.org/project/cx-Freeze/) setup files and run them to create applications from python scripts (converts .py to .exe or .msi) .
 

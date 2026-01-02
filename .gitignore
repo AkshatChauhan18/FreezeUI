@@ -1,7 +1,7 @@
 .vscode/
 build/
 dist/
-FreezeUI.egg-info/
+FreezeUI_U.egg-info/
 __pycache__/
 .pytest_cache
 tests/tmp
