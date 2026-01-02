@@ -1,9 +1,0 @@
-PyQt6
-cx_Freeze
-QtPy
-qtconsole
-pyqt6-qscintilla
-plyer
-
-[dev]
-pytest==6.2.4
