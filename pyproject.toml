@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "FreezeUI"
+version = "0.1.0"
+description = "Convert .py to .exe/.msi using GUI and cx_Freeze"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "GPL-3.0-or-later"
+authors = [{ name = "Akshat Chauhan", email = "coder.akshatch@gmail.com" }]
+keywords = ["python", "gui", "cx_Freeze", "FreezeUI","py to exe", "py to msi"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    # "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: Microsoft :: Windows",
+]
+dependencies = ["PyQt6", "cx_Freeze", "qtconsole", "pyqt6-qscintilla", "plyer"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://akshatchauhan18.github.io/FreezeUI"
+Documentation = "https://github.com/AkshatChauhan18/FreezeUI"
+Repository = "https://github.com/AkshatChauhan18/FreezeUI"
+[project.scripts]
+freezeui = "FreezeUI.__main__:open_ui"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["FreezeUI*"]
+
+[tool.setuptools.package-data]
+FreezeUI = [
+    "assets/icon_text.png",
+    "assets/editor.svg",
+    "assets/exe_icon.svg",
+    "assets/exe.svg",
+    "assets/icon_text.svg",
+    "assets/icon.svg",
+    "assets/icon.ico",
+    "assets/menu.svg",
+    "assets/msi_icon.svg",
+    "assets/msi.svg",
+    "assets/Varela_Round/VarelaRound.ttf",
+    "assets/msi_template.txt",
+    "assets/exe_template.txt",
+    "assets/main.ui",
+]

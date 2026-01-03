@@ -41,7 +41,7 @@ class EditorWidget(QWidget):
         self.editor.setMarginWidth(1, "0000")
         self.editor.setBraceMatching(QsciScintilla.BraceMatch.SloppyBraceMatch)
         self.lexer = QsciLexerPython()
-        self.lexer.setDefaultPaper(QColor(152, 125, 154,255))
+        self.lexer.setDefaultPaper(QColor(40, 44, 52,255))
         self.editor.setLexer(self.lexer)
         self.editor.setTabWidth(4)
         self.editor.setIndentationGuides(True)
