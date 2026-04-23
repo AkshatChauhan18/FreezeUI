@@ -1,4 +1,4 @@
 theme: jekyll-theme-minimal
 show_downloads: false
-logo:  assets/icon.png
+logo:  assets/icon_text.png
 description: "Converts Python file to application using GUI"
